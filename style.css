@@ -1,0 +1,171 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('gaming_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure background covers the full viewport height */
+    color: #fff; /* Change text color to white */
+}
+
+* {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+.container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+   background: rgba(0, 0, 0, 0.6);  /* Adjust this value for transparency */
+}
+
+.form-container form {
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   background: rgba(51, 51, 51, 0.8); /* Dark background with slight transparency */
+   text-align: center;
+   width: 500px;
+}
+
+
+.container .content {
+   text-align: center;
+}
+
+.container .content h3 {
+   font-size: 30px;
+   color: #FFD700; /* Yellow color for welcome text */
+}
+
+.container .content h3 span {
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   padding: 0 15px;
+}
+
+.container .content h1 {
+   font-size: 50px;
+   color: #FFD700; /* Yellow color for main title */
+}
+
+.container .content h1 span {
+   color: crimson;
+}
+
+.container .content p {
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn {
+   display: inline-block;
+   padding: 10px 30px;
+   font-size: 20px;
+   background: #FFD700; /* Gold background for buttons */
+   color: #000;
+   margin: 0;
+   text-transform: capitalize;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.container .content .btn:hover {
+   background: #FFC300; /* Darker gold on hover */
+}
+
+.form-container {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   padding-bottom: 60px;
+}
+
+.form-container form {
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   background: rgba(51, 51, 51, 0.93); /* Dark background with slight transparency */
+   text-align: center;
+   width: 500px;
+}
+
+.form-container form h3 {
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color: #FFD700; /* Yellow color for form header */
+}
+
+.form-container form input,
+.form-container form select {
+   width: 100%;
+   padding: 10px 15px;
+   font-size: 17px;
+   margin: 8px 0;
+   background: #444; /* Darker background for input fields */
+   color: #fff; /* White text color for input fields */
+   border-radius: 5px;
+}
+
+.form-container form .form-btn {
+   background: #FFD700; /* Gold background for form buttons */
+   color: #000;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover {
+   background: #FFC300; /* Darker gold on hover */
+}
+
+.form-container form p {
+   margin-top: 10px;
+   font-size: 20px;
+   color: #FFD700; /* Yellow color for footer text */
+}
+
+.form-container form p a {
+   color: crimson;
+}
+
+.form-container form .error-msg {
+   margin: 10px 0;
+   display: block;
+   background: crimson;
+   color: #fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+   .container .content h1 {
+      font-size: 40px; /* Smaller heading on mobile */
+   }
+}
+
+.member-login-text {
+   color: white !important; /* Force the color to white */
+   font-size: 20px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+

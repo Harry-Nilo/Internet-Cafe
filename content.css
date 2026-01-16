@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('gaming_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Dashboard Container */
+.container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    max-width: 800px;
+}
+
+/* Dashboard Menu */
+.dashboard-menu {
+    margin-bottom: 20px;
+}
+
+.horizontal-menu {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    justify-content: flex-start; /* Align items to the start */
+    margin: 10px 0;
+}
+
+.menu-item {
+    cursor: pointer;
+    color: #FFD700;
+    white-space: nowrap; /* Prevent text wrapping */
+    margin-right: 40px; /* Increase space between items */
+}
+
+/* Log Out Link */
+#logout {
+    float: right; /* Align to the right */
+    color: red; /* Change text color */
+    text-decoration: none; /* Remove underline */
+    margin-top: 30px; /* Space from top */
+}
+
+#logout:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Content Sections */
+.content-section {
+    margin-top: 20px;
+    border: 1px solid #FFD700;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Minimize Button */
+.minimize-btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #FFD700;
+    font-size: 18px;
+    outline: none;
+    padding: 5px;
+}
+
+/* Hidden State for Section Content */
+.section-content.hidden {
+    display: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #FFC300;
+}
+
+/* QR Code Size */
+#qr-code-container img {
+    width: 300px; /* Set the desired width for the QR code */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .horizontal-menu {
+        flex-direction: column; /* Stack items vertically on small screens */
+        margin: 0; /* Reset margin for small screens */
+    }
+
+    .menu-item {
+        margin-right: 0; /* Remove extra spacing */
+        margin-bottom: 10px; /* Add spacing between items when stacked */
+    }
+
+    .content-section {
+        margin-top: 10px;
+    }
+
+    .flavor-options {
+        margin-top: 10px;
+        padding-left: 20px;
+    }    
+
+    .button-spacing {
+        margin: 100px; /* Adjust the value as needed */
+    }    
+}
+
+/* Style to remove underline and add hover effect for menu items and links */
+
+/* Style to remove underline and add hover effect for menu items and links */
+
+/* Style to remove underline and add hover effect for menu items and links */
+
+.menu-item a,
+a { 
+    text-decoration: none; /* Removes the underline from links */
+    color: #333; /* Set a default color */
+    font-size: 16px; /* Set a base font size */
+    transition: transform 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for scaling and underline */
+}
+
+.menu-item a:hover,
+a:hover {
+    transform: scale(1.1); /* Enlarge the text on hover (10% bigger) */
+    text-decoration: underline; /* Underline the text on hover */
+    cursor: pointer; /* Changes cursor to indicate clickable element */
+}
+
+#countdown-container {
+    display: flex;
+    align-items: center;
+}
+
+#reset-timer-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    height: auto;
+    margin-top: -2px; /* Pull button up slightly */
+}
